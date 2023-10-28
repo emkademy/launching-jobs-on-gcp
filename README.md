@@ -38,4 +38,4 @@ Run:
 make launch-job OVERRIDES='+configs/examples=simple-vm'
 ```
 
-**NOTE: ** In order to see available commands you can run `make` without any target.
+**NOTE:** In order to see available commands you can run `make` without any target.
