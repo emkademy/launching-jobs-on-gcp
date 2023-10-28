@@ -37,7 +37,7 @@ ensure_newline_before_comments = true
 line_length = 120
 indent = 4
 lines_between_types = 1
-known_first_party = ["cybulde"]
+known_first_party = ["launcher"]
 default_section = "THIRDPARTY"
 sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
 

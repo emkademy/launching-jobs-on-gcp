@@ -52,4 +52,4 @@ class InstanceTemplateCreatorConfig:
     vm_metadata_config: VMMetadataConfig = VMMetadataConfig()
     template_name: str = SI("${infrastructure.instance_group_creator.name}")
     project_id: str = SI("${infrastructure.project_id}")
-    labels: dict[str, str] = field(default_factory=lambda: {"project": "cybulde"})
+    labels: dict[str, str] = field(default_factory=lambda: {"project": "my-project-name"})
