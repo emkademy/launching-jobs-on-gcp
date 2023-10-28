@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  app:
+    user: "${USER_ID:-1000}"
+    hostname: "${HOST_NAME:-emkademy}"
+    ipc: host
+    init: true
+    command: tail -F anything
+
+    image: gcp-launcher
+    container_name: gcp-launcher-container
+
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        USER_NAME: "${USER_NAME}"
+        USER_ID: "${USER_ID}"
+
+    volumes:
+      - ~/.config/gcloud/:/home/${USER_NAME}/.config/gcloud
+      - ./:/app

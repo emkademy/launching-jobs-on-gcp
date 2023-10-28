@@ -1,0 +1,14 @@
+# @package _global_
+
+infrastructure:
+  project_id: cybulde # NOTE: Change this with your own GCP project id
+  zone: europe-west4-a
+  instance_group_creator:
+    node_count: 1
+    instance_template_creator:
+      vm_config:
+        machine_type: n1-standard-1
+        accelerator_count: 0
+        accelerator_type: nvidia-tesla-t4
+        vm_type: STANDARD
+        disks: []
