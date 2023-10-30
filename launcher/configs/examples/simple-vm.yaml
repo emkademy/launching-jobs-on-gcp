@@ -2,7 +2,8 @@
 
 infrastructure:
   project_id: cybulde # NOTE: Change this with your own GCP project id
-  zone: europe-west4-a
+  region: europe-west4
+  zone: europe-west4-c
   instance_group_creator:
     node_count: 1
     instance_template_creator:
